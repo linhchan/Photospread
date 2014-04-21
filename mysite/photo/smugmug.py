@@ -86,17 +86,6 @@ class SmugmugClient(object):
                 #if result['stat'] != 'ok' : raise Exception('Bad result code']
         return result
         
-def main():
-    smug = SmugmugClient()
-    login_method = 'smugmug.login.withPassword'
-    login_info = smug.login(login_method)
-
-    #album_name = raw_input('Name of album to upload to: ') @todo: how get a pop up message to ask user which album to upload to in views.py
-    session = login_info['Login']['Session']['id']
-    #album_id = smug.getalbumid(session, album_name) # comment out to just assign a known album_id for testing integration within django
-    album_id=38487135 # a known existing album_id for testing
-    uploadtoalbum = smug.uploadtoalbum(session,album_id)
-    if uploadtoalbum['stat'] == 'ok': print 'Successfully uploaded to Smugmug'
-
 if __name__ == '__main__':
-    main()      
+    pass      
+
