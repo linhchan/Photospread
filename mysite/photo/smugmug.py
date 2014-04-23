@@ -8,7 +8,7 @@ This will use API version 1.2.2
 
 """ Constants """
 EMAIL='linhchan1205@gmail.com'
-PASSWORD='iloverockclimbing'
+PASSWORD='iloverockclimbing' # todo @linh: hash/encode password and decode it later on. Do not show raw password!
 API_KEY='PIA0bSs4qxvzwsNUUvGt1hNeGQhZoE3K'
 API_VERSION='1.2.2'
 API_URL='https://api.smugmug.com/services/api/json/1.2.2/' # Assume SSL is used
