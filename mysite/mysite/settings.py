@@ -86,7 +86,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'mysite/templates'),)
-MEDIA_ROOT  = '/Users/linhchan/P-O-U-master/mysite/media/'
+MEDIA_ROOT  = BASE_DIR + '/media/'
 MEDIA_URL = '/media/'
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
