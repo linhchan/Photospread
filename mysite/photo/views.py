@@ -22,7 +22,7 @@ def main(request):
         albums = albums.filter(public=True)
     
     # Number of albums per page 
-    paginator = Paginator(albums, 2) 
+    paginator = Paginator(albums, 10) 
     try: page = int(request.GET.get("page", '1'))
     except ValueError: page = 1
 
